@@ -1,0 +1,14 @@
+section.kv-section.news-page
+	.container
+		.kv-title
+			p Video Clips
+		.row
+			-for(i=1; i<7; i++)
+				.col-lg-4
+					.item-video
+						a(href="https://www.youtube.com/watch?v=fMgQlG-x428&feature=emb_title" data-fancybox="Video")
+							.img.opacity
+								img(src="./assets/News/i-"+i+".png" alt="")
+								em.material-icons play_circle_outline
+							.content
+								.title NETCO lọt Top 100 Thương hiệu hàng đầu Việt 2018, 2019

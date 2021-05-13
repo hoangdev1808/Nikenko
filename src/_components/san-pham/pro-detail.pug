@@ -1,0 +1,135 @@
+section.kv-section.pro-detail-1
+	.container
+		.pro-wrapper
+			.pro-slider
+				.swiper-container.gallery-thumbs
+					.swiper-wrapper
+						-for(i=1; i<12; i++)
+							.swiper-slide
+								.item
+									.img
+										img(src="./assets/pro/pro-"+i+".png" alt="")
+				.swiper-button-next
+				.swiper-button-prev
+				.swiper-container.gallery-top
+					.swiper-wrapper
+						-for(i=1; i<12; i++)
+							.swiper-slide
+								.item
+									.img
+										img(src="./assets/pro/pro-"+i+".png" alt="")
+			.pro-infor
+				.content
+					h1.title Viên Uống Hỗ Trợ Não Bộ DHA 1000mg ITOH Nhật Bản
+					.sub-title
+						.price
+							p 1.320.000 đ
+								span 1.610.000 đ
+						.social
+							a.face(href="")
+								em.fab.fa-facebook-f
+							a.twitter(href="")
+								em.fab.fa-twitter
+				.desc
+					p Viên uống DHA ITOH của Nhật Bản hỗ trợ bổ bộ, tăng cường trí nhớ
+					table
+						tr
+							td Hãng sản xuất
+							td ITOH
+						tr
+							td Mã sẳn phẩm
+							td P006646
+						tr
+							td Xuất xứ
+							td Nhật bản
+						tr
+							td Tình trạng
+							td Còn hàng
+				.pro-infor-bottom
+					.item-quantity
+						.input-group
+							.input-group-btn
+								.qty-minus.btn-number
+									em.material-icons remove
+							input.product-details-quantity.form-control.input-number(type='text' value='1')
+							.input-group-btn
+								.qty-plus.btn-number
+									em.material-icons add
+					.add-shopping-cart
+						a.nav-link(href="")
+							em.material-icons shopping_cart
+							|Thêm vào giỏ hàng
+section.kv-section.pro-detail-2
+	.container
+		.tab-panels
+			ul.tabs
+				li.item.active(rel='panel-1') Thông tin chi tiết
+				li.item(rel='panel-2') Đánh giá sản phẩm
+			#panel-1.panel.active
+				.full-content.ovh.gradient
+					p Viên uống DHA của Nhật ITOH với thành phần chiết xuất từ dầu cá ngừ vây xanh chứa hàm lượng DHA cao, bổ sung EPA hỗ trợ não bộ, tăng cường trí nhớ, bảo vệ hệ thần kinh của người cao tuổi, hỗ trợ tim mạch, giảm nguy cơ mắc các vấn đề liên quan đến tim mạch và sáng mắt.
+					p 
+						strong Công dụng Viên uống bổ não DHA 1000mg ITOH
+					ul
+						li
+							p Viên uống bổ sung DHA 1000mg giúp bổ não, tăng cường trí nhớ, bảo vệ tế bào thần kinh
+						li
+							p Bổ sung EPA hỗ trợ mắt sáng khỏe
+						li
+							p Hỗ trợ tuần hoàn, bảo vệ tim mạch, hỗ trợ các vấn đề về tim mạch do xơ vữa động mạch
+						li
+							p  Sản phẩm còn có công dụng hỗ trợ tăng cường sức khỏe, tăng cường hệ thống miễn dịch
+					p 
+						img(src="./assets/pro/pro-de-5.png" alt="")
+				.view-more 
+					span Xem thêm
+					em.material-icons expand_more
+			#panel-2.panel
+section.kv-section.pro-detail-3
+	.container
+		.kv-title
+			p sản phẩm khác
+		.other-slide
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1; i<17; i++)
+						.swiper-slide
+							.item-pro
+								.img
+									a(href="chi-tiet-san-pham.html")
+										img(src="./assets/pro/pro-"+i+".png" alt="")
+								.content
+									a.title(href="chi-tiet-san-pham.html") Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+									.desc
+										.price
+											p 1.320.000 đ
+											span 1.610.000 đ
+										.icon
+											a(href="chi-tiet-san-pham.html")
+												em.material-icons shopping_cart
+			.swiper-button-next
+			.swiper-button-prev
+section.kv-section.pro-detail-4
+	.container
+		.kv-title
+			p sản phẩm đã xem
+		.lastview-slide 
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1; i<17; i++)
+						.swiper-slide
+							.item-pro
+								.img
+									a(href="chi-tiet-san-pham.html")
+										img(src="./assets/pro/pro-"+i+".png" alt="")
+								.content
+									a.title(href="chi-tiet-san-pham.html") Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+									.desc
+										.price
+											p 1.320.000 đ
+											span 1.610.000 đ
+										.icon
+											a(href="chi-tiet-san-pham.html")
+												em.material-icons shopping_cart
+			.swiper-button-next
+			.swiper-button-prev

@@ -1,0 +1,209 @@
+.contact-page
+	.wrapper-map
+		width: 100%
+		background-color: #ffffff
+		box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.12)
+		.infor-box
+			width: 100%
+			padding: 0 40px
+			min-height: 400px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			background-color: $main-color
+			.caption
+				p
+					font-size: 16px
+					color: rgb(255, 255, 255)
+					font-weight: bold
+					line-height: 1.5
+				.img
+					padding-top: .9rem
+					padding-bottom: 1.8rem
+			.content
+				p
+					display: flex
+					align-items: center
+					font-size: 15px
+					color: rgb(255, 255, 255)
+					line-height: 1.6
+					padding-bottom: .5rem
+					.material-icons
+						padding-right: 10px
+					&.desc
+						padding-bottom: 1.8rem
+			@media screen and ( max-width: 991px)
+				padding: 15px
+		.map
+			width: 100%
+			height: 100%
+			@media screen and ( max-width: 991px)
+				height: 400px
+			@media screen and ( max-width: 575px)
+				height: 300px
+			.ModuleContent
+				height: 100%
+			iframe
+				width: 100%
+				height: 100%
+.l-0
+	padding-left: 0
+	@media screen and ( max-width: 991px)
+		padding-left: 15px
+
+.r-0
+	padding-right: 0
+	@media screen and ( max-width: 991px)
+		padding-right: 15px
+
+.form-contact
+	background-color: #fafafa
+	p
+		text-align: center
+	.wrap-form
+		padding-top: 35px
+		.form-row
+			margin: 0
+			width: 100%
+			.form-group
+				display: flex
+				flex-direction: column
+				padding: 0
+				span
+					font-weight: 400
+					color: red
+					font-family: Monterat, sans-serif
+					&::before
+						content: ''
+				input
+					border-width: 1px
+					border-color: rgb(225, 225, 225)
+					border-style: solid
+					background-color: rgb(241, 241, 241)
+					height: 40px
+				&:first-child
+					padding-right: 15px
+				&:last-child
+					padding-left: 15px
+				@media screen and ( max-width: 575px)
+					&:first-child
+						padding-right: 0
+					&:last-child
+						padding-left: 0
+			@media screen and ( max-width: 575px)
+				flex-direction: column
+		.form-group
+			width: 100%
+			display: flex
+			flex-direction: column
+			textarea
+				border-width: 1px
+				border-color: rgb(225, 225, 225)
+				border-style: solid
+				background-color: rgb(241, 241, 241)
+				height: 118px
+
+			span
+				font-weight: 400
+				color: red
+				font-family: 'Open Sans', sans-serif
+				&::before
+					content: ''
+			&.frm-captcha
+				width: 100%
+				align-items: center
+				display: flex
+				@media screen and ( max-width: 576px)
+					flex-direction: column
+					align-items: flex-start
+					.frm-captcha-input
+						margin-bottom: 15px
+					.frm-btnwrap
+						width: 100%
+						.frm-btn
+							margin-left: 0
+					.RadCaptcha
+						div
+							flex-direction: unset
+				.frm-captcha-input
+					label
+						display: none
+					input
+						background-color: rgb(255, 255, 255)
+						width: 300px
+						height: 50px
+						box-shadow: 0 5px 15px 0 rgba(0,0,0,.15)
+						border: none
+						padding-left: 15px
+				.RadCaptcha
+					display: flex
+					div
+						display: flex
+						flex-direction: row-reverse
+					span
+						display: none
+					.rcRefreshImage
+						width: 20px
+						margin: 0 13px
+						font-size: 0
+						position: relative
+						&::before
+							position: absolute
+							content: 'replay'
+							font-size: 30px
+							font-family: Material Icons
+		.frm-btnwrap
+			label
+				display: none
+
+			.frm-btn
+				margin: 0 auto
+				width: 160px
+				height: 50px
+				display: flex
+				align-items: center
+				position: relative
+				input
+					border-radius: 20px
+					background-color: #2e3192
+					width: 100%
+					height: 40px
+					line-height: 40px
+					color: #fff
+					padding-right: 20px
+					display: flex
+					align-items: center
+					justify-content: center
+				&::before
+					position: absolute
+					top: 50%
+					right: 30%
+					transform: translateY(-50%)
+					font-size: 20px
+					color: #ffffff
+					content: '\e87a'
+					font-family: Linearicons-Free
+					pointer-events: none
+				&:hover
+					input
+						background-color: $main-color
+						color: #ffffff
+						transition: all ease-in-out .3s
+					&::before
+						color: #ffffff
+						transition: all ease-in-out .3s
+
+			@media(max-width: 1024px)
+				width: unset
+				margin-top: 15px
+
+			.frm-btn-reset
+				display: none
+
+		@media screen and ( min-width: 1200px)
+			width: 1020px
+			margin: 0 auto
+			.form-row
+				margin: 0
+				.form-group
+					padding: 0

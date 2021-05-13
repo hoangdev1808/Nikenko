@@ -1,0 +1,65 @@
+section.kv-section.cart-detail
+	.container
+		.cart-wrapper
+			.admin-title
+				.text
+					| Giỏ hàng của bạn ( 
+					span 4
+					|  sản phẩm)
+			.wrapper
+				table.carttable(cellspacing='0' cellpadding='0')
+					thead
+						tr
+							th Sản phẩm
+							th giá
+							th số lượng
+							th tổng tiền
+					tbody
+						tr
+							td
+								.product-item
+									.image
+										a(href='')
+											img(src='./assets/index/pro-1.png' alt='')
+									.caption
+										.title
+											a(href='') Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+										a.remove-item(href='')
+											em.lnr.lnr-cross-circle
+											span Bỏ sản phẩm
+							td
+								.price
+									.current 1.296.000 đ
+									.old-wrap
+							td
+								.quantity-wrapper
+									.item-quantity
+										.input-group
+											.input-group-btn
+												.qty-minus.btn-number
+													em.material-icons remove
+											input.product-details-quantity.form-control.input-number(type='text' maxlength='10' value="4")
+											.input-group-btn
+												.qty-plus.btn-number
+													em.material-icons add
+							td
+								.total 1.296.000 đ
+			.total-wrapper
+				table.total-table
+					tbody
+						tr
+							td Tạm tính
+							td(align='right') 1.296.000 đ
+						tr
+							td Giảm giá
+							td(align='right') 0
+						tr
+							td Tổng cộng
+							td(align='right') 1.296.000 đ
+				.btn-right
+					a.btn.btn-primary.gray(href='/')
+						em.lnr.lnr-arrow-left
+						span Tiếp tục mua hàng
+					a.btn.btn-primary.red(href='')
+						span Tiến hành thanh toán
+						em.lnr.lnr-arrow-right

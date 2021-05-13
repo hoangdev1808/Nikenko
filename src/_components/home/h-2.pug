@@ -1,0 +1,68 @@
+section.kv-section.home-2
+	.container
+		.tab-panels
+			p.category-nav Danh mục
+				em.material-icons keyboard_arrow_down
+			ul.tabs
+				li.active(rel='panel-1') Sản phẩm mới
+				li(rel='panel-2') Sản phẩm bán chạy
+				li(rel='panel-3') Sản phẩm khuyến mãi
+			#panel-1.panel.active
+				.slide-colum
+					.swiper-container
+						.swiper-wrapper
+							-for(i=1; i<7; i++)
+								.swiper-slide
+									.item-pro
+										.img
+											a(href="")
+												img(src="./assets/index/pro-"+i+".png", alt="")
+										.content
+											a.title(href="") Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+											.desc
+												.price
+													p 1.320.000 đ
+													span 1.610.000 đ
+												.icon
+													a(href="")
+														em.material-icons shopping_cart
+					.swiper-button-prev
+					.swiper-button-next
+			#panel-2.panel
+				.slide-colum
+					.swiper-container
+						.swiper-wrapper
+							-for(i=1; i<7; i++)
+								.swiper-slide
+									.item
+										.img
+											img(src="./assets/index/pro-"+i+".png", alt="")
+										.content
+											h1.title Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+											.desc
+												.price
+													p 1.320.000 đ
+													span 1.610.000 đ
+												.icon
+													em.material-icons shopping_cart
+					.swiper-button-prev
+					.swiper-button-next
+			#panel-3.panel
+				.slide-colum
+					.swiper-container
+						.swiper-wrapper
+							-for(i=1; i<7; i++)
+								.swiper-slide
+									.item
+										.img
+											img(src="./assets/index/pro-"+i+".png", alt="")
+										.content
+											h1.title Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+											.desc
+												.price
+													p 1.320.000 đ
+													span 1.610.000 đ
+												.icon
+													em.material-icons shopping_cart
+					.swiper-button-prev
+					.swiper-button-next

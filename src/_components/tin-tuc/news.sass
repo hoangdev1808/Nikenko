@@ -1,0 +1,162 @@
+.news-page
+	.single-swiper
+		margin-bottom: 30px
+	.item-big,
+	.item-small
+		width: 100%
+		margin-bottom: 30px
+		.img
+			width: 100%
+			margin-bottom: 15px
+			overflow: hidden
+			img 
+				width: 100%
+				transform: scale(1)
+				transition: all .3s
+		.content
+			.title
+				font-size: 22px
+				color: $color-text
+				font-weight: bold
+				padding-bottom: 15px
+			.desc
+				margin-bottom: 20px
+				p 
+					font-size: 14px
+					color: rgb(51, 51, 51)
+	.item-big
+		.img
+			height: 400px
+	.item-small
+		.img
+			width: 100%
+			height: 180px
+			overflow: hidden
+			img 
+				width: 100%
+				height: 100%
+				transform: scale(1)
+				transition: all .3s
+				object-fit: cover
+			&.h-custom
+				height: 245px
+		.content
+			.title
+				font-size: 16px
+				font-weight: 600
+	.item-big,
+	.item-small 
+		&:hover
+			.img
+				img 
+					transform: scale(1.1)
+					transition: all .3s
+			.content
+				.title
+					color: $main-color
+					text-decoration: underline
+	@media screen and ( max-width: 1199px)
+		.item-big
+			.img
+				width: 100%
+				height: auto
+		.item-small
+			.img
+				height: 145px
+				&.h-custom
+					height: 145px
+	@media screen and ( max-width: 991px)
+		.item-big,
+		.item-small
+			margin-bottom: 30px
+		.item-small
+			.img
+				height: 220px
+				&.h-custom
+					height: 220px
+	@media screen and ( max-width: 767px)
+		.item-small
+			.img
+				height: 160px
+				&.h-custom
+					height: 160px
+	@media screen and ( max-width: 575px)
+		.item-small
+			.img
+				height: 335px
+				&.h-custom
+					height: 335px
+	@media screen and ( max-width: 375px)
+		.item-small
+			.img
+				height: 215px
+				&.h-custom
+					height: 215px
+		.item-big,
+		.item-small
+			.content
+				.title
+					font-size: 16px
+					padding-bottom: 0
+				.desc
+					margin-bottom: 10px
+				.view-more
+					font-size: 14px
+					.material-icons
+						font-size: 16px
+	.item-video
+		margin-bottom: 30px
+		.img
+			width: 100%
+			height: 253px
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				transform: scale(1)
+				transition: all .5s
+			&.opacity
+				position: relative
+				.material-icons
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					color: #ffffff
+					font-size: 48/16*1rem
+					font-weight: 400
+					letter-spacing: normal
+					line-height: 32px
+					z-index: 2
+				&::after
+					position: absolute
+					width: 100%
+					height: 100%
+					content: ''
+					top: 0
+					left: 0
+					pointer-events: none
+					background-color: rgba($color: #000000, $alpha: .4)
+		.content
+			height: 75px
+			transition: all .5s
+			padding: 18px 40px 24px 29px
+			background-color: #e1e1e1
+			.title
+				color: $main-color
+				font-size: 16px
+				font-weight: 600
+				letter-spacing: normal
+				line-height: 20px
+				text-align: left
+		&:hover
+			.img
+				img
+					transform: scale(1.05)
+					transition: all .5s
+			.content
+				transition: all .5s
+				.title
+					a
+						color: #ffffff

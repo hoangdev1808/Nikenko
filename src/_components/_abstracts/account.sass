@@ -1,0 +1,338 @@
+// Varibles
+$gradient-1: linear-gradient(90deg, #2e3192,#878be9)
+$primary: #2e3192
+$sub: #223771
+$red: #ed1c24
+
+.alert
+	position: relative
+	padding: .75rem 1.25rem
+	margin-bottom: 1rem
+	border: 1px solid transparent
+	border-radius: .25rem
+	display: block
+	line-height: 1.25
+	&.alert-danger
+		color: $red !important
+		background-color: transparent !important
+	&.alert-success
+		color: #155724
+		background-color: #d4edda
+		border-color: #c3e6cb
+
+.login-box,.wrap-register,.wrap-recover,.wrap-resetpass
+	margin: 60px auto
+	padding: 1.875rem
+	background: #fff
+	border-radius: 10px
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.03)
+
+.login-logo,.pagetitle,.postname,.wrap-recover h1
+	font-size: 1.5rem
+	text-align: center
+	line-height: 1.375
+	font-weight: 700
+	margin-bottom: 1.25rem
+	color: #2e3192
+
+.posttitle, .wrap-resetpass h1
+	font-size: 1.25rem
+	margin-bottom: 1.25rem
+	line-height: 1.375
+
+.postname
+	text-align: left
+	color: #2e3192
+
+.login-box-msg
+	font-size: 1.125rem
+	margin-bottom: 1rem
+
+.login-box,.wrap-register,.account-form,.address-form,.wrap-recover,.wrap-resetpass
+	input[type=text],input[type=password],select
+		border: 0 !important
+		border-bottom: 1px solid #d7d7d7 !important
+		padding: 12px!important
+		width: 100% !important
+		height: auto !important
+	input[type=submit]
+		height: 2.5rem
+		width: 8.125rem
+		font-size: 1rem
+		color: #fff
+		border: 0
+		font-weight: 700
+		display: block
+		margin-left: auto
+	input:disabled
+		color: #666
+		background-color: transparent
+		font-style: italic
+
+.wrap-register,.account-form,.address-form,.wrap-recover,.wrap-resetpass
+	.settingrow
+		> *
+			flex: 0 0 100%
+			max-width: 100%
+	.form-group
+		margin-bottom: 20px
+		label
+			line-height: 1.5
+
+.passwordrecovery,.wrap-register
+	input[type=submit]
+		margin: 0 auto
+
+.fa-exclamation-triangle
+	font-size: 12px
+	color: red
+	line-height: 2
+
+.profile-container
+	padding: 3rem 15px
+
+.user-sidebar,.user-sidelink
+	padding: 1.875rem
+	background: #fff
+	border-radius: 10px
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.03)
+
+.userinfo
+	figure
+		display: flex
+		align-items: center
+		img
+			border-radius: 50%
+		figcaption
+			padding-left: 20px
+			color: $sub
+			line-height: 1.375
+	.user-name
+		font-weight: 700
+		font-size: 1.125rem
+
+.user-sidelink
+	margin-top: 1.875rem
+	ul
+		list-style: none
+		padding: 0
+		li
+			padding: 10px 0
+			display: inline-flex
+			a
+				font-size: 1rem
+				color: #333333
+				font-weight: 600
+			&:nth-child(5)
+				display: none
+		+ li
+			margin-top: 15px
+			border-top: 1px solid #eee
+			padding-top: 15px
+			&.active
+				a
+					color: $primary
+.account-form,
+.address-form
+	.button-wrap
+		input
+			background-color: #2e3192
+			color: #ffffff
+			border: solid 1px transparent
+			transition: all .5s ease-in-out
+		&:hover
+			input
+				background-color: #ffffff
+				color: #2e3192
+				border: solid 1px #2e3192
+.address-form
+	.form-group
+		&:nth-child(6)
+			display: none
+.account-info,.coin-info,.cart-history,.address-info,.order-info,.order-information,.order-product,.order-total
+	padding: 1.25rem
+	background: #fff
+	border-radius: 10px
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.03)
+	line-height: 1.375
+	.link
+		color: #5bc0de
+		font-size: 0.875rem
+
+.info-heading
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 1.25rem
+	.posttitle,.postname
+		margin-bottom: 0
+		color: #2e3192
+	.link
+		color: #5bc0de
+		font-size: 0.875rem
+
+.account-info
+	.info-detail
+		.group
+			.label
+				color: #787878
+
+.address-list
+	flex-direction: column
+	.address-col
+		margin-bottom: 1.25rem
+		padding-bottom: 10px
+		border-bottom: solid 1px #e5e5e5
+		&:last-child
+			border-bottom: none
+	+ .address-col
+		padding-top: 1.25rem
+		margin-top: 1.25rem
+		border-top: 1px dashed #eee
+
+	.address
+		font-size: 0.875rem
+		position: relative
+		.type
+			align-items: center
+			background-color: $primary
+			border-radius: 4px
+			color: #fff
+			display: inline-flex
+			font-size: .75rem
+			height: 2em
+			justify-content: center
+			line-height: 1.5
+			padding-left: .75em
+			padding-right: .75em
+			white-space: nowrap
+			margin-bottom: .9375rem
+			position: absolute
+			right: 0
+			top: 0
+		.btn-editaddr
+			color: #5bc0de
+			text-decoration: underline
+			text-underline-position: under
+			display: inline-block
+			margin-top: 0.625rem
+		.btn-deleteaddr
+			color: #999
+			margin-left: 0.625rem
+		.addr-detail
+			ul
+				list-style: none
+				padding: 0
+.cart-history,.order-product
+	overflow: auto
+	table
+		width: 100%
+		font-size: 14px
+		thead
+			th
+				font-weight: 700
+				padding: .75rem .75rem
+				border-bottom: 1px solid #dbdbdb
+				color: #333333
+		tbody
+			td
+				border: 1px solid #dbdbdb
+				border-width: 0 0 1px
+				padding: .75rem .75rem
+				vertical-align: top
+				a
+					display: block
+					color: #5bc0de
+
+					+ .name
+						margin-top: 5px
+					&:hover
+						text-decoration: underline
+			tr
+				&:last-child
+					td
+						border-bottom: 0
+.order-product
+	table
+		td
+			text-align: center
+			color: #333333
+			.product
+				display: flex
+				align-items: center
+				.img
+					width: 80px
+				.caption
+					flex: 1 1 0%
+					padding-left: 20px
+					font-size: 14px
+
+.order-total
+	width: 400px
+	max-width: 100%
+	margin-left: auto
+	margin-top: 1rem
+	font-size: 14px
+	table
+		width: 100%
+		tr
+			td
+				text-align: right
+				padding: .5rem .75rem
+				&.total
+					font-weight: 700
+					font-size: 18px
+					color: $primary
+			&:first-child
+				td
+					padding-top: 0
+
+.regcomplete
+	span
+		color: #6cc070
+		display: block
+		text-align: center
+		margin-bottom: 20px
+
+.order-information
+	.title
+		color: #2e3192
+		font-weight: 700
+		font-size: 18px
+		margin-bottom: 15px
+		padding-bottom: 10px
+		border-bottom: 1px dashed #ccc
+	ul
+		list-style: none
+		padding: 0
+		font-size: 14px
+		li
+			padding-bottom: 7px
+			&.name
+				color: #2e3192
+				font-size: 16px
+.signup-page
+	.signup-panel
+		.signup-form
+			table
+				tbody
+					tr
+						td
+							input
+								background-color: #ffffff
+.loginstandard
+	.btn-social
+		margin-top: 15px
+		margin-bottom: 10px
+		text-align: center
+		button
+			width: 49%
+			display: inline-block
+			border: none
+			color: #fff
+			font-weight: bold
+			padding: 10px 15px
+			&.btsocialloginfb
+				background: #3b5998
+			&.btsociallogingg
+				background: #de5245

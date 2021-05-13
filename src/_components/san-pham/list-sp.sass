@@ -1,0 +1,409 @@
+.list-products
+	background-color: #f8f8f8
+	.single-swiper
+		margin-bottom: 40px
+	.kv-slide
+		background-color: #ffffff
+		border: solid 1px #e1e1e1
+		.swiper-slide
+			padding-right: 20px
+			border-right: solid 1px #e1e1e1
+	.filter-product
+		width: 100%
+		margin-bottom: 40px
+		background-color: #ffffff
+		border: solid 1px #e1e1e1
+		border-top: none
+		.filter-content
+			padding: 17px 30px
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			.sort,
+			.price,
+			.show
+				label
+					padding-right: 20px
+					font-size: 16px
+					color: $main-color
+					font-weight: bold
+					text-transform: uppercase
+					text-align: left
+				#select
+					position: relative
+					-webkit-appearance: none
+					-moz-appearance: none
+					-o-appearance: none
+					background-image: url('../assets/icons/down.png')
+					background-repeat: no-repeat
+					background-position: 90%
+					cursor: pointer
+					option
+						background-color: #ffffff
+						border: none
+			.sort
+				select
+					border: none
+			.price
+				select
+					border-radius: 0
+					height: 25px
+					padding: 0 .9rem
+					background-color: #eaeaf4
+					border: none
+					@media screen and ( max-width:  575px)
+						margin-bottom: .9rem
+				span
+					padding: 0 10px
+					font-size: 16px
+					color: $color-text
+			.show
+				select
+					border: none
+					padding: 0 15px
+			@media screen and ( max-width: 991px)
+				.sort,
+				.price,
+				.show
+					margin-bottom: 17px
+				.show
+					margin-bottom: 0
+				.price
+					width: 100%
+					display: flex
+					flex-direction: column
+					label
+						margin-bottom: .9rem
+					select
+						margin-bottom: 0
+					span
+						padding: .5rem 0
+						margin-top: 0
+						margin-bottom: 0
+	.list-items
+		.item-pro
+			margin-bottom: 30px
+			@media screen and ( max-width: 1199px)
+				width: 100%
+				height: auto
+				.img
+					width: 100%
+					height: 150px
+					text-align: center
+					padding: 15px 0
+					img
+						width: 100%
+			@media screen and ( max-width: 575.98px )
+				.content
+					padding: 7px
+					.desc
+						margin-top: 7px
+						.price
+							p
+								font-size: 14px
+		@media screen and ( max-width: 575.98px )
+			.item-pro
+				margin-bottom: 10px
+			.col-6
+				&:nth-child(2n)
+					padding-left: 5px
+				&:nth-child(2n-1)
+					padding-right: 5px
+.pro-detail-1
+	width: 100%
+	background-color: #f8f8f8
+	.pro-wrapper
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		.pro-slider
+			width: calc( 100% - 450px)
+			position: relative
+			display: flex
+			.gallery-thumbs
+				width: 105px
+				height: 540px
+				margin: auto 0
+				.swiper-slide
+					width: max-content
+					height: 100px !important
+					.item
+						width: 105px
+						background-color: #ffffff
+						display: flex
+						align-items: center
+						justify-content: center
+						cursor: pointer
+						.img
+							width: 100%
+							height: 100px
+							img
+								width: 100%
+								height: 100%
+								transform: scale(.6)
+								object-fit: contain
+			.gallery-top
+				overflow: hidden
+				width: calc( 100% - 105px )
+				height: auto
+				margin-left: 20px
+				margin-right: 20px
+				.item
+					width: 100%
+					height: 100%
+					background-color: #ffffff
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					.img
+						width: 100%
+						height: 325px
+						img
+							width: 100%
+							height: 100%
+							object-fit: contain
+			.swiper-button-next,
+			.swiper-button-prev
+				background-image: none
+				cursor: pointer
+				left: 4.5%
+			.swiper-button-next
+				top: 100%
+				&::before
+					content: 'expand_more'
+					font-family: Material Icons
+					font-size: 30.5px
+					color: #333333
+			.swiper-button-prev
+				top: 0
+				&::before
+					content: 'expand_less'
+					font-family: Material Icons
+					font-size: 30.5px
+					color: #333333
+		.pro-infor
+			width: 450px
+			background-color: #ffffff
+			.content
+				padding: 30px
+				padding-top: 27px
+				padding-bottom: 15px
+				border-bottom: solid 1px #e1e1e1
+				.title
+					font-size: 24px
+					color: $main-color
+					line-height: 34px
+					font-weight: 700
+					margin-bottom: 15px
+					text-transform: uppercase
+				.sub-title
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					justify-content: space-between
+					.price
+						display: inline-flex
+						p
+							font-size: 24px
+							color: $red
+							font-weight: bold
+							span
+								font-weight: 500
+								padding-left: 20px
+								font-size: 14px
+								color: rgb(153, 153, 153)
+								text-decoration: line-through
+			.desc
+				padding: 30px
+				p
+					font-size: 16px
+					color: $color-text
+					text-align: left
+					margin-bottom: .5rem
+				table
+					width: 100%
+					margin-bottom: 15px
+					tr
+						td
+							padding: .5rem 0
+							&:first-child
+								font-size: 16px
+								color: rgb(51, 51, 51)
+								font-weight: bold
+								text-align: left
+							&:last-child
+								font-size: 16px
+								color: $main-color
+								text-align: left
+			.pro-infor-bottom
+				display: flex
+				padding: 0 30px
+				.item-quantity
+					margin-bottom: 20px
+					margin-right: 30px
+					.input-group
+						border-width: 1px
+						border-color: rgb(225, 225, 225)
+						border-style: solid
+						background-color: rgb(255, 255, 255)
+						width: 128px
+						height: 40px
+						&-btn
+							position: relative
+							justify-content: center
+							width: 45px
+							height: 40px
+							.qty-minus,
+							.qty-plus
+								width: 100%
+								height: 100%
+								line-height: 40px
+								text-align: cente
+								cursor: pointer
+								.material-icons
+									width: 100%
+									height: 100%
+									display: flex
+									align-items: center
+									justify-content: center
+									color: $color-text
+								&:hover
+									.material-icons
+										background-color: $main-color
+										color: #ffffff
+						.form-control
+							padding: 0
+							border: none
+							text-align: center
+							&:focus
+								box-shadow: none
+				.add-shopping-cart
+					background-color: $main-color
+					width: 230px
+					height: 40px
+					border-radius: 20px
+					.nav-link
+						display: flex
+						align-items: center
+						color: #ffffff
+						.material-icons
+							padding-right: 15px
+		@media screen and ( max-width: 991px)
+			.pro-slider
+				width: 100%
+				margin-bottom: 30px
+				flex-direction: column-reverse
+				.gallery-top
+					width: 100%
+					height: auto
+					margin-right: 0
+					margin-left: 0
+					.item
+						height: 350px
+						.img
+							height: 100%
+							img
+								transform: scale(.8)
+				.gallery-thumbs
+					width: 100%
+					height: 100px
+					margin-top: 10px
+					.swiper-slide
+						.item
+							width: 100%
+				.swiper-button-next
+					top: 90%
+					left: 90%
+					&::before
+						content: 'keyboard_arrow_right'
+				.swiper-button-prev
+					top: 90%
+					left: 0
+					&::before
+						content: 'keyboard_arrow_left'
+			.pro-infor
+				width: 100%
+				.content
+					.title
+						font-size: 18px
+					.sub-title
+						.price
+							p
+								font-size: 18px
+								span
+									line-height: unset
+.pro-detail-2
+	padding-top: 0
+	background-color: #f8f8f8
+	.tab-panels
+		.tabs
+			li
+				border-width: 0.5px
+				border-color: rgb(225, 225, 225)
+				border-style: solid
+				background-color: rgb(255, 255, 255)
+				width: 230px
+				height: 40px
+				line-height: 1
+				text-align: center
+				margin-right: 0
+				color: $color-text
+				&.active
+					background-color: $main-color
+					color: #ffffff
+				&:hover
+					background-color: $main-color
+					color: #ffffff
+				&:last-child
+					display: none
+			@media screen and ( max-width: 991px)
+				display: block
+				padding: 0
+				background: none
+				li
+					width: 100%
+					margin-bottom: .9rem
+		.panel
+			padding: 40px
+			background-color: rgb(255, 255, 255)
+			.full-content
+				p
+					font-size: 16px
+					color: $color-text
+					line-height: 30px
+					text-align: left
+					img
+						padding: 10px 0
+				ul
+					padding: 0
+					padding-bottom: 30px
+					display: block
+					li
+						padding: 0
+						p
+							padding: 0
+			.view-more
+				position: relative
+				width: 100%
+				display: flex
+				justify-content: center
+				cursor: pointer
+				em
+					transform: rotate(0deg)
+					transition: all .5s ease-in-out
+				&.active
+					em
+						transform: rotate(180deg)
+						transition: all .5s ease-in-out
+			@media screen and ( max-width: 991px)
+				padding: 15px
+				.full-content
+					p,
+					ul
+						padding-bottom: .5rem
+.pro-detail-3
+	padding-top: 0
+	width: 100%
+	background-color: #f8f8f8

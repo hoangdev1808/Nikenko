@@ -1,0 +1,11 @@
+extends ../_components/_layout/_layout.pug
+
+block var 
+	- let title = 'Ho tro';
+	- let bodyClass = 'index-page';
+block banner,breadcrumb
+block main
+	include ../_components/banner/pages-banner.pug
+	include ../_components/_layout/_breadcrumb.pug
+	include ../_components/tuyen-dung/tuyen-dung.pug
+block scripts

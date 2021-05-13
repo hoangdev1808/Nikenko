@@ -1,0 +1,85 @@
+section.kv-section.list-products
+	.container
+		.kv-title
+			p sản phẩm
+		.single-swiper
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1; i<8; i++)
+						.swiper-slide
+							.item
+								.img
+									img(src="./assets/icons/sec-"+i+".png", alt="")
+								.desc
+									p Chắm sóc sức khoẻ trẻ em
+			.swiper-button-prev
+			.swiper-button-next
+		.kv-slide
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1; i<7; i++)
+						.swiper-slide
+							.item
+								.img
+									img(src="./assets/index/nsx-"+i+".png", alt="")
+			.swiper-button-prev
+			.swiper-button-next
+		.filter-product
+			p.category-nav Danh mục
+				em.material-icons keyboard_arrow_down
+			.filter-content
+				.sort
+					label(for="") sắp xếp
+					select#select
+						option(value="Tất cả") Tất cả
+						option(value="Từ A - Z") Từ A - Z
+						option(value="Từ Z - A") Từ Z - A
+						option(value="Từ cao - thấp") Từ cao - thấp
+						option(value="Từ thấp - cao") Từ thấp - cao
+				.price
+					label(for="") khoảng giá
+					select#select
+						option(value="Tất cả") Tất cả
+						option(value="Từ A - Z") Từ A - Z
+						option(value="Từ Z - A") Từ Z - A
+						option(value="Từ cao - thấp") Từ cao - thấp
+						option(value="Từ thấp - cao") Từ thấp - cao
+					span đến
+					select#select
+						option(value="Tất cả") Tất cả
+						option(value="Từ A - Z") Từ A - Z
+						option(value="Từ Z - A") Từ Z - A
+						option(value="Từ cao - thấp") Từ cao - thấp
+						option(value="Từ thấp - cao") Từ thấp - cao
+				.show
+					label(for="") hiển thị
+					select#select
+						option(value="16") 16
+						option(value="32") 32
+						option(value="64") 64
+		.list-items
+			.row
+				-for(i=1; i<17; i++)
+					.col-lg-3.col-md-4.col-sm-6.col-12
+						.item-pro
+							.img
+								a(href="chi-tiet-san-pham.html")
+									img(src="./assets/pro/pro-"+i+".png", alt="")
+							.content
+								a.title(href="chi-tiet-san-pham.html") Viên Uống Hỗ Trợ Não Bộ DHA  ITOH Nhật Bản
+								.desc
+									.price
+										p 1.320.000 đ
+										span 1.610.000 đ
+									.icon
+										a(href="chi-tiet-san-pham.html")
+											em.material-icons shopping_cart
+			.pages
+				.modulepager
+					ul.pagination
+						li.active
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3

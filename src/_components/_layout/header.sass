@@ -1,0 +1,288 @@
+.kv-header
+	position: fixed
+	width: 100%
+	z-index: 1000
+	border-bottom: solid 2px #ed1c24
+	background-color: #ffffff
+	box-shadow: 0 0 6px rgba($color: #000000, $alpha: .3)
+	transition: all .3s ease-in-out
+	.header-top
+		width: 100%
+		padding: 0
+		background-color: #ebebeb
+		ul
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			list-style: none
+			padding-left: 0
+			padding-right: 20px
+			li
+				a
+					font-size: 13px
+					color: $color-text
+					padding: 0 .5rem
+			@media screen and ( max-width: 575px)
+				padding-right: 0
+				li
+					a
+						padding: 0
+			.language
+				button
+					display: flex
+					aligin-items: center
+					border: none
+					position: relative
+					&::after
+						position: absolute
+						top: 50%
+						right: -10px
+						transform: translateY(-50%)
+						border: none
+						content: 'keyboard_arrow_down'
+						font-family: Material Icons
+						font-size: 24px
+						color: rgb(153, 153, 153)
+				.dropdown-menu
+					min-width: max-content
+					right: 0
+					left: unset !important
+					border-radius: 0
+					.dropdown-item
+						padding: .5rem
+	.navbar
+		width: 100%
+		padding: 0
+		.logo
+			width: 20%
+			img
+				width: 100%
+				height: 100%
+		.main-menu
+			width: calc( 100% - 20%)
+			position: relative
+			.logo-mobile
+				@media screen and ( min-width: 992px)
+					display: none
+			.icon
+				width: 100%
+				padding: 15px 0
+				padding-bottom: 0
+				display: flex
+				align-items: flex-start
+				justify-content: flex-end
+				.search-icon
+					display: none
+				#search-box
+					.form-group
+						position: relative
+						display: flex
+						align-items: center
+						margin-bottom: 0
+						input
+							border-width: 1px
+							border-color: rgb(225, 225, 225)
+							border-style: solid
+							background-color: rgb(241, 241, 241)
+							width: 547px
+							height: 35px
+							border-radius: 20px
+							padding-left: 15px
+						button
+							position: absolute
+							right: 23px
+							height: 38px
+							.material-icons
+								font-size: 24px
+								color: rgb(46, 49, 146)
+								line-height: 38px
+				.hotline
+					margin-left: 20px
+					height: 38px
+					padding-right: 15px
+					border-right: #e1e1e1 solid 1px
+					a
+						line-height: 38px
+						display: flex
+						align-items: center
+						.material-icons
+							font-size: 20px
+							color: rgb(46, 49, 146)
+							margin-right: 7px
+
+						.fone
+							font-size: 16px
+							color: rgb(46, 49, 146)
+							font-weight: bold
+			.navbar-nav
+				width: 100%
+				justify-content: flex-end
+				.nav-item
+					margin-left: 1rem
+					.nav-link
+						padding: .5rem 0
+						font-size: 14px
+						color: $color-text
+						font-weight: bold
+						text-transform: uppercase
+					&:hover
+						.nav-link
+							color: $red
+					&.active
+						.nav-link
+							color: $red
+			.kv-toggle
+				width: 30px
+				height: 30px
+				cursor: pointer
+				position: relative
+				padding: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: .3s all linear
+				.hamburger-button
+					position: relative
+					width: 100%
+					transition: .3s all linear
+					span
+						position: absolute
+						left: 50%
+						transform: translate(-50%, -50%)
+						width: 100%
+						height: 2px
+						background-color: $main-color
+						content: ""
+						transition: .3s all linear
+						&:first-child
+							top: -10px
+
+						&:last-child
+							top: 10px
+				&.active
+					transition: .3s all linear
+					.hamburger-button
+						span
+							top: 50%
+							left: 50%
+							&:first-child
+								transform: translate(-50%, -50%) rotate(45deg)
+							&:nth-child(2)
+								visibility: hidden
+								opacyti: 0
+								transition: .2s all linear
+							&:last-child
+								transform: translate(-50%, -50%) rotate(-45deg)
+				@media screen and ( min-width: 992px)
+					display: none
+				@media(max-width: 576px)
+					.hamburger-button
+					+ span
+						display: none
+	@media screen and ( max-width: 1365.98px)
+		.navbar
+			.logo
+				max-width: 100%
+				max-height: 100%
+			.main-menu
+				width: calc( 100% - 20%)
+				.icon
+					#search-box
+						.form-group
+							input
+								width: 100%
+				.navbar-nav
+					.nav-item
+						margin-left: auto
+						.nav-link
+							font-size: 13px
+	@media screen and ( max-width: 1199px)
+		.navbar
+			.logo
+				width: 20%
+	@media screen and ( max-width: 991px)
+		.navbar
+			position: relative
+			padding-bottom: 36px
+			.container
+				padding: 0 15px
+			.main-menu
+				width: 100%
+				padding: 7px 0
+				display: flex
+				align-items: center
+				.logo-mobile
+					width: 150px
+					margin: 0 auto
+				.icon
+					display: none
+				.shoping-cart
+					margin-left: 0
+					.material-icons
+						font-size: 24px
+				#search-box
+					position: absolute
+					top: 55px
+					left: 0
+					width: 100%
+					.form-group
+						max-width: 1230px
+						position: relative
+						margin-bottom: 0
+						input
+							width: 100%
+							height: 30px
+							padding: 0 60px
+							border-radius: 0
+							background-color: #ffffff
+							border: solid 1px $main-color
+						button
+							width: 50px
+							height: 30px
+							position: absolute
+							left: 0
+							top: 0
+							background-color: $main-color
+							color: #ffffff
+							display: flex
+							align-items: center
+							justify-content: center
+
+					.suggestsearch
+						margin-top: 0
+						top: 100%
+						.product-list
+							height: 50vh
+				.navbar-nav
+					position: absolute
+					top: calc( 162% + 2px)
+					left: -100%
+					width: 50vw
+					height: auto
+					background-color: #ffffff
+					z-index: 1000
+					justify-content: flex-start
+					transition: all .3s
+					box-shadow: 0 0 6px 0 rgba($color: #000000, $alpha: .5)
+					.nav-item
+						margin-left: 0
+						padding: 1rem
+						border-bottom: solid 1px $red
+						&:last-child
+							border: none
+					&.active
+						left: calc( 0px - 15px )
+						transition: all .3s
+	@media screen and ( max-width: 458px)
+		.header-top
+			ul
+				li
+					margin-right: .5rem
+					.nav-link
+						padding: .5rem 0
+						font-size: 12px
+		.navbar
+			.main-menu
+				.navbar-nav
+					width: 70vw

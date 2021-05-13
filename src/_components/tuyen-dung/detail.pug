@@ -1,0 +1,135 @@
+section.kv-section.hr-detail-page
+	.container
+		.row
+			.col-xl-9.col-lg-12.col-md-12.col-12
+				.title Nhân viên trưởng phòng kinh doanh
+				.bottom-wrapper
+					.social
+						a.face(href="")
+							em.fab.fa-facebook-f
+						a.twitter(href="")
+							em.fab.fa-twitter
+					.box-apply
+						a.btn.btn__down(href="") Tải mẫu đơn ứng tuyển
+						a.btn.btn__apply(href="") Nộp đơn ứng tuyển
+				.full-content
+					p Thông tin tuyển dụng nhanh
+					table
+						tbody
+							tr
+								td
+									em.fa.fa-id-badge
+									|Ngành nghề
+								td Kinh doanh
+							tr
+								td
+									em.fas.fa-dollar-sign
+									|Lương
+								td 
+									span 8.000.000 - 12.000.000 VNĐ
+							tr
+								td
+									img(src="./assets/icons/ht.png" alt="")
+									| Hình thức công việc
+								td Full time
+							tr
+								td
+									em.material-icons person
+									| Cấp bậc
+								td Nhân viên
+							tr
+								td
+									em.fa.fa-briefcase
+									| Kinh nghiệm
+								td Không cần
+							tr
+								td
+									em.far.fa-calendar-times
+									| Ngày hết hạn
+								td(style="color: #ed1c24;") 28/06/2020
+							tr
+								td
+									em.fa.fa-calendar
+									| Ngày cập nhật
+								td 15/05/2020
+				.attribute
+					p.title Mô tả công việc
+					ul
+						li
+							p Lên kế hoạch tìm kiếm khách hàng qua các kênh khác nhau
+						li
+							p Báo cáo kết quả hàng tuần với ban lãnh đạo
+						li
+							p Thực hiện các công việc được giao
+						li
+							p Chăm sóc khách hàng cũ và thu thập thông tin khách hàng mới
+						li
+							p Kế hợp các phòng ban thực hiện các chiến dịch của công ty
+					a.view-more(href="") Xem thêm
+						em.material-icons expand_more
+				.attribute
+					p.title Yêu cầu công việc
+					ul
+						li
+							p Lên kế hoạch tìm kiếm khách hàng qua các kênh khác nhau
+						li
+							p Báo cáo kết quả hàng tuần với ban lãnh đạo
+						li
+							p Thực hiện các công việc được giao
+						li
+							p Chăm sóc khách hàng cũ và thu thập thông tin khách hàng mới
+						li
+							p Kế hợp các phòng ban thực hiện các chiến dịch của công ty
+					a.view-more(href="") Xem thêm
+						em.material-icons expand_more
+				.attribute
+					p.title Yêu cầu công việc
+					ul
+						li
+							p Lên kế hoạch tìm kiếm khách hàng qua các kênh khác nhau
+						li
+							p Báo cáo kết quả hàng tuần với ban lãnh đạo
+						li
+							p Thực hiện các công việc được giao
+						li
+							p Chăm sóc khách hàng cũ và thu thập thông tin khách hàng mới
+						li
+							p Kế hợp các phòng ban thực hiện các chiến dịch của công ty
+				.attribute
+					p.title Yêu cầu công việc
+					ul
+						li
+							p Lên kế hoạch tìm kiếm khách hàng qua các kênh khác nhau
+						li
+							p Báo cáo kết quả hàng tuần với ban lãnh đạo
+						li
+							p Thực hiện các công việc được giao
+						li
+							p Chăm sóc khách hàng cũ và thu thập thông tin khách hàng mới
+						li
+							p Kế hợp các phòng ban thực hiện các chiến dịch của công ty
+					a.view-more(href="") Xem thêm
+						em.material-icons expand_more
+			.col-xl-3.col-lg-12.col-md-12.col-12
+				.sidebar
+					.other-title Thông tin liên hệ
+					span Người liên hệ: Ông ABC
+					ul 
+						li 
+							span.material-icons location_on
+							p Tầng 2, phong GO. 2.11 , Tòa nhà Galaxy 9, Số 9 Nguyễn Khoái, P0.1, Q4, TPHCM
+						li 
+							span.material-icons call
+							p 09xxxxxxxx
+						li 
+							span.material-icons mail
+							p sale@nikenko.vn
+				.sidebar
+					.other-title công việc tương tự
+					ul.list
+						-for(i=1; i<6; i++)
+							li
+								a(href="chi-tiet-tuyen-dung.html")
+									h1 Phó phòng kinh doanh
+									p Nơi làm việc: TP. Hồ Chí Minh
+									span Hạn nộp hồ sơ: 28/ 06/ 2020

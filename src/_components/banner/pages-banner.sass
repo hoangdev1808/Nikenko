@@ -1,0 +1,25 @@
+#page-banner
+	width: 100%
+	.banner__pages
+		position: relative
+		width: 100%
+		.img
+			&.desktop
+				+img-ratio(550/1920)
+				@media screen and ( max-width: 767.98px )
+					display: none
+			&.mobile
+				+img-ratio(450/800)
+				@media screen and ( min-width: 768px )
+					display: none
+		.swiper-pagination-bullet
+			width: 12px
+			height: 12px
+			opacity: 1
+			background-color: #f1f1f1
+			border: solid 1px #ffffff
+			&-active
+				background-color: $main-color
+		@media screen and ( max-width: 575.98px )
+			.img
+				min-height: 25vh

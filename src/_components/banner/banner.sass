@@ -1,0 +1,36 @@
+.kv-banner
+	position: relative
+	margin-left: auto
+	width: 100%
+	cursor: pointer
+	.Module
+		height: 100%
+		.ModuleContent
+			height: 100%
+			div
+				height: 100%
+	.list-banner
+		width: 100%
+		position: relative
+		.slide-content
+			width: 100%
+			.swiper-inner
+				&.desktop
+					+img-ratio(550/1920)
+					@media screen and ( max-width: 767.98px )
+						display: none
+				&.mobile
+					@media screen and ( min-width: 768px )
+						display: none
+		.swiper-pagination-bullet
+			width: 12px
+			height: 12px
+			opacity: 1
+			background-color: #f1f1f1
+			border: solid 1px #ffffff
+			&-active
+				background-color: $main-color
+body.whiteskins .cmstable td
+	&:nth-child(2)
+		img
+			width: 150px !important

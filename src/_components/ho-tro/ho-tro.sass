@@ -1,0 +1,115 @@
+.helper-page
+	background-color: #f8f8f8
+	.tab-panels
+		.panel
+			width: 100%
+			padding: 40px
+			background-color: #ffffff
+			.title
+				font-size: 28px
+				color: $main-color
+				font-weight: bold
+				line-height: 1.2
+				text-align: left
+			&#hotro-panel1
+				.full-content
+					padding-top: 0
+			.full-content
+				p
+					font-size: 16px
+					color: rgb(51, 51, 51)
+					line-height: 1.5
+				h5
+					padding: 30px 0
+					font-size: 18px
+					color: rgb(51, 51, 51)
+					font-weight: bold
+					text-transform: uppercase
+					line-height: 1.2
+				.question
+					&-card
+						.question-title
+							width: 100%
+							padding: 0 20px
+							min-height: 40px
+							display: flex
+							align-items: center
+							justify-content: space-between
+							background-color: rgb(245, 245, 245)
+							border-bottom: solid 2px #ffffff
+							cursor: pointer
+							p
+								font-size: 28px
+								color: $main-color
+								font-weight: bold
+								line-height: 1.2
+								text-align: left
+							.ri-arrow-drop-down-line
+								font-size: 20px
+								color: $main-color
+								transform: rotate(0deg)
+								transition: .3s
+							&:hover
+								p
+									color: $main-color
+								.ri-arrow-drop-down-line
+									color: $main-color
+							&.active
+								p
+									color: $main-color
+								.ri-arrow-drop-down-line
+									color: $main-color
+									transform: rotate(180deg)
+									transition: .3s
+						.question-body
+							padding: 20px
+							display: none
+					@media screen and ( max-width: 1024px)
+						&-card
+							.question-title
+								p
+									font-size: 14px
+							.question-body
+								padding: 30px
+					@media screen and ( max-width: 575px)
+						&-card
+							.question-body
+								padding: 15px
+		.tabs-left
+			flex-direction: column
+			border: none
+			align-items: flex-start
+			li
+				position: relative
+				text-align: left
+				margin: 0
+				padding-left: 20px
+				&::before
+					position: absolute
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+					content: 'chevron_right'
+					font-family: Material Icons
+					font-size: 20px
+				&::after
+					display: none
+				&.active
+					color: $main-color
+					text-decoration: underline
+		@media screen and ( max-width: 991px)
+			.left
+				order: 2
+				.panel
+					padding: 15px
+					.title
+						font-size: 18px
+					.full-content
+						padding-top: 17px
+						h5
+							padding: 15px 0
+							font-size: 16px
+			.right
+				order: 1
+				.img
+					display: none

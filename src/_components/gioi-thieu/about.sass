@@ -1,0 +1,82 @@
+.about-1
+	width: 100%
+	padding-bottom: 0
+	background-color: #ffffff
+	@media screen and ( max-width: 575px)
+		background-size: 90%
+	.img
+		width: 100%
+		img 
+			width: 100%
+			height: 100%
+	.kv-title
+		padding-top: 1rem
+		padding-left: 32px
+		@media screen and ( max-width: 991px)
+			padding: 0
+		p 
+			text-align: left
+	.content
+		width: 100%
+		padding-left: 32px
+		padding-right: 55px
+		max-height: 295px
+		overflow-y: auto
+		p 
+			padding-bottom: 30px
+			font-size: 16px
+			color: $color-text
+		@media screen and ( max-width: 991px)
+			padding: 0
+			padding-right: 20px
+			max-height: 215px
+		&::-webkit-scrollbar-track 
+			box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
+			background-color: #d7d7d7
+
+		&::-webkit-scrollbar 
+			width: 5px
+			height: 5px
+			background-color: #d7d7d7
+
+		&::-webkit-scrollbar-thumb 
+			border-radius: 0
+			box-shadow: inset 0 0 6px rgba(255, 255, 255, 0)
+			background-color: $main-color
+
+.about-2
+	background-color: #eaeaf4
+	.kv-title
+		margin-bottom: 40px
+		@media screen and ( max-width: 575px)
+			margin-bottom: 20px
+	.list-items
+		width: 100%
+		.item
+			width: 100%
+			background-color: #ffffff
+			box-shadow: 3.527px 4.854px 12px 0px rgba(0, 0, 0, 0.06)
+			height: 225px
+			margin-bottom: 30px
+			figure
+				width: 100%
+				text-align: center
+				.img
+					padding-top: 30px
+					margin-bottom: 25px
+				figcaption
+					padding: 0 40px
+					.desc
+						font-size: 14px
+						color: $color-text
+						text-align: center
+						p 
+							font-size: 14px
+							color: $color-text
+							text-align: center
+
+.about-3
+	background-color: #ffffff
+	.kv-slide
+		.item
+			background-color: #f3f3f3

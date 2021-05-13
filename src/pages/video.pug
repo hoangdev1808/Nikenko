@@ -1,0 +1,11 @@
+extends ../_components/_layout/_layout.pug
+
+block var 
+	- let title = 'Tin tuc';
+	- let bodyClass = 'index-page';
+block banner,breadcrumb
+block main
+	include ../_components/banner/pages-banner.pug
+	include ../_components/_layout/_breadcrumb.pug
+	include ../_components/tin-tuc/video.pug
+block scripts

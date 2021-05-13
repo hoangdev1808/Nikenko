@@ -1,0 +1,49 @@
+section.kv-section.contact-page
+	.container
+		.kv-title
+			p liên hệ
+		.wrapper-map
+			.row
+				.col-lg-4.r-0
+					.infor-box
+						.caption
+							p Công ty TNHH Thương mại XNK
+							.img
+								img(src="./assets/white-logo.png", alt="")
+						.content
+							p.desc Tầng 2 ,Phòng GO. 2.11 Tòa nhà Galaxy 9 , Số 9 Nguyễn Khoái, P.01, Q.4, TP.HCM
+							p Mã số thuế: 0316078235
+							p 
+								em.material-icons call
+								|09xxxxxxxx
+							p 
+								em.material-icons mail
+								|sale@nikenko.vn
+						
+				.col-lg-8.l-0
+					.map
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7314494767593!2d106.69174551535194!3d10.75516836252537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f0e74f65755%3A0x30b56fda198a09ea!2zOSBOZ3V54buFbiBLaG_DoWksIFBoxrDhu51uZyAxLCBRdeG6rW4gNCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1603341301861!5m2!1sen!2s' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+section.kv-section.form-contact
+	.container
+		p Để biết thêm thông tin về NIKENKO của chúng tôi liên hệ với bạn, vui lòng điền vào mẫu dưới đây.
+		.wrap-form
+			.form-row
+				.form-group.col
+					label(for="") Họ và tên*
+					input(type="text")
+				.form-group.col
+					label(for="") Số điện thoại *
+					input(type="text")
+			.form-row
+				.form-group.col
+					label(for="") Email*
+					input(type="text")
+				.form-group.col
+					label(for="") Tiêu đề*
+					input(type="text")
+			.form-group
+				label(for="") Nội dung*
+				textarea(name="", cols="30", rows="10")
+			.form-group.frm-btnwrap
+				.frm-btn
+					input.btn.btn-default.frm-btn-submit(type='submit' name="" value='Gửi')
